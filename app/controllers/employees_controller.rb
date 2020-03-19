@@ -18,12 +18,6 @@ class EmployeesController < ApplicationController
         end
     end
 
-    # def show
-    # end
-
-    # def edit
-    # end
-
     def update
         if @employee.update(employee_params)
             redirect_to @employee
