@@ -1,0 +1,13 @@
+<h1><%= @dog.name %>'s Profile</h1>
+
+<p>Name: <%= @dog.name %></p>
+<p>Breed: <%= @dog.breed %></p>
+<p>Age: <%= @dog.age %></p>
+<br>
+Who is your owner, and what do they do?
+<ul>
+    <% @dog.employees.each do |employee| %>
+    <li><%= employee.first_name + " " + employee.last_name %></li>
+    <img src=<%= employee.img_url %>>
+    <% end %>
+</ul>
